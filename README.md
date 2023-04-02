@@ -1,66 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Introduction
+This project is a platform that allows users to create their own profile and share information about themselves with others. This website includes features like user registration and login, which allows users to securely access their accounts and create, read, update, and delete (CRUD) their own blog posts.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Once users have logged in, they can create new blog posts using a simple form interface. They can add a title, content, and other details about the post, such as tags or categories. The website also includes a feature that allows users to edit or delete their existing posts.
 
-## About Laravel
+Once a user has created a blog post, it will be displayed on the show-blog page for other users to read and comment on. The show-blog page is a public-facing page that showcases all the blog posts created by users. This allows users to share their writing with others and receive feedback and comments on their work.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Overall, this project is a great way for individuals to showcase their creativity and share their personal stories and experiences with others. It provides a platform for self-expression and community-building, allowing users to connect with like-minded individuals who share similar interests and passions.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Usage
+1. ./vendor/bin/sail up
+2. ./vendor/bin/sail artisan migrate
+3. ./vendor/bin/sail npm run dev
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Flow
+1. User click on the register button located at top left corner to register, then login
+2. User click on create blog button to create blog
+3. User click home located at top left corner to go to public-facing page
+4. User click show blogs button in middle of the page to show blogs
+5. User click the cards, then will show details of the blogs.
 
-## Learning Laravel
+## Screenshots of the projects:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h5>Homepage:</h5>
+<img width="909" alt="Screenshot 2023-04-02 at 11 04 56 PM" src="https://user-images.githubusercontent.com/61724961/229361471-63f6255b-9847-4541-9ea5-5a153d8f18a9.png">
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h5>Show Blog Page:</h5>
+<img width="912" alt="Screenshot 2023-04-02 at 10 59 11 PM" src="https://user-images.githubusercontent.com/61724961/229361063-1cbfdcc8-410b-43f7-9c30-9044001ef74d.png">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h5>Show Blog Details Pop up Modal:</h5>
+<img width="907" alt="Screenshot 2023-04-02 at 11 05 34 PM" src="https://user-images.githubusercontent.com/61724961/229361501-739ad478-159c-4911-9417-b9dddc651dbe.png">
 
-## Laravel Sponsors
+<h5>Admin Panel:</h5>
+<img width="914" alt="Screenshot 2023-04-02 at 10 59 57 PM" src="https://user-images.githubusercontent.com/61724961/229361104-c2ed1c20-0346-4d0a-b560-61d55acd8ba8.png">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+<h5>Create Blog Page:</h5>
+<img width="909" alt="Screenshot 2023-04-02 at 11 06 55 PM" src="https://user-images.githubusercontent.com/61724961/229361574-cf1df08c-e185-4c36-a874-b0f8c5e5231a.png">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<h5>Edit Blog Page:</h5>
+<img width="910" alt="Screenshot 2023-04-02 at 11 07 30 PM" src="https://user-images.githubusercontent.com/61724961/229361613-6a63fbd3-666c-4f66-94f5-1dbb8d8a0a7a.png">
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
