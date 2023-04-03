@@ -8,9 +8,15 @@ Once a user has created a blog post, it will be displayed on the show-blog page 
 Overall, this project is a great way for individuals to showcase their creativity and share their personal stories and experiences with others. It provides a platform for self-expression and community-building, allowing users to connect with like-minded individuals who share similar interests and passions.
 
 ## Usage
-1. ./vendor/bin/sail up
-2. ./vendor/bin/sail artisan migrate
-3. ./vendor/bin/sail npm run dev
+1. docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php82-composer:latest \
+    composer install --ignore-platform-reqs
+2. ./vendor/bin/sail up
+3. ./vendor/bin/sail artisan migrate
+4. ./vendor/bin/sail npm run dev
 
 ## Flow
 1. User click on the register button located at top left corner to register, then login
